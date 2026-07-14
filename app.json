@@ -1,17 +1,30 @@
 {
   "expo": {
-    "name": "hw-card",
-    "slug": "hw-card",
+    "name": "Demo Badge",
+    "slug": "electronic-badge-demo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#28263A",
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Demo Badge to select a local demo profile photo.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ],
+      "expo-font"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.demo.electronicbadge",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#28263A",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
